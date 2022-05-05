@@ -1165,10 +1165,10 @@
   resolved "https://registry.yarnpkg.com/@ctrl/tinycolor/-/tinycolor-3.4.1.tgz#75b4c27948c81e88ccd3a8902047bcd797f38d32"
   integrity sha512-ej5oVy6lykXsvieQtqZxCOaLT+xD4+QNarq78cIYISHmZXshCvROLudpQN3lfL8G0NL7plMSSK+zlyvCaIJ4Iw==
 
-"@db-man/components@^0.1.47":
-  version "0.1.47"
-  resolved "https://registry.yarnpkg.com/@db-man/components/-/components-0.1.47.tgz#26a8396fe14011ded31575cd5ab43a68af300bfb"
-  integrity sha512-FLyeGcJFdmwWDs3FyPemSd+0OYKLJhfYQIp4IaUevGEmcC7jNMe03GB77I9YzSpe+UFczp13wf75vulW5y9+MQ==
+"@db-man/components@^0.1.50":
+  version "0.1.50"
+  resolved "https://registry.yarnpkg.com/@db-man/components/-/components-0.1.50.tgz#1725bd081992399005171b8961eb53c2364f8ec1"
+  integrity sha512-GNSWR3GiH+Pg43EAe2D0wmG6fazdwGdOItZl5CR+BjK7bX4DNVpDoEk7CISGaz9A5uql9GtFWZBpztGZYNYgDw==
   dependencies:
     "@ant-design/icons" "^4.7.0"
     "@db-man/github" "^0.1.6"
