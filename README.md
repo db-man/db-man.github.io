@@ -1,1 +1,0 @@
-# db-man.github.io
