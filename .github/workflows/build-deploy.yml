@@ -1,3 +1,6 @@
+# When someone pushes to `main` branch,
+# build the create-react-app project and deploy the static files to `gh-pages` branch
+
 name: Build & deploy
 
 on:
