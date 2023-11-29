@@ -1,0 +1,21 @@
+# Run on 00:00 every Monday
+# Upgrade package-lock.json then git push
+
+name: Workflow Name Upgrade Packages
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron:  '0 0 * * 1'
+
+permissions:
+  contents: write
+
+jobs:
+  job_id_upgrade_packages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Step Name Upgrade Packages
+        run: |
+          ./upgrade.sh
