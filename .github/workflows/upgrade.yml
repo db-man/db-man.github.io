@@ -1,5 +1,9 @@
 # Run on 00:00 every Monday
 # Upgrade package-lock.json then git push
+#
+# > Note: You cannot trigger new workflow runs using the GITHUB_TOKEN
+# So the git push in this workflow will not trigger build-deploy.yml
+# But we need build-deploy.yml to listen to upgrade.yml succeeded
 
 name: Workflow Name Upgrade Packages
 
@@ -8,6 +12,7 @@ on:
   schedule:
     - cron:  '0 0 * * 1'
 
+# Defining access for the GITHUB_TOKEN scopes (GITHUB_TOKEN used actions/checkout@v3 could git push)
 permissions:
   contents: write
 

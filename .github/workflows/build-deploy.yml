@@ -1,4 +1,5 @@
 # When someone pushes to `main` branch,
+# or when "Workflow Name Upgrade Packages" workflow succeeded,
 # build the create-react-app project and deploy the static files to `gh-pages` branch
 
 name: Build & deploy
@@ -8,6 +9,10 @@ on:
   push:
     branches:
       - main
+  workflow_run: # Only trigger, when the "Workflow Name Upgrade Packages" workflow succeeded
+    workflows: ["Workflow Name Upgrade Packages"]
+    types:
+      - completed
 
 jobs:
   build:
