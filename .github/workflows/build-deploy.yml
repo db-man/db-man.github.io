@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: 16.x
 
-      - name: Install NPM packages
+      - name: Build this project
         run: ./build.sh
 
       - name: Deploy to gh-pages
