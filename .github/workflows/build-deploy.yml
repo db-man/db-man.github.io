@@ -2,7 +2,7 @@
 # or when "Workflow Name Upgrade Packages" workflow succeeded,
 # build the create-react-app project and deploy the static files to `gh-pages` branch
 
-name: Build & deploy
+name: Workflow Name Build And Deploy
 
 on:
   workflow_dispatch:
@@ -15,23 +15,23 @@ on:
       - completed
 
 jobs:
-  build:
-    name: Build
+  job_id_build_and_push:
+    name: Job Name Build And Push
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Step Name Checkout code
         uses: actions/checkout@v2
 
-      - name: Install Node.js
+      - name: Step Name Install Node.js
         uses: actions/setup-node@v1
         with:
           node-version: 16.x
 
-      - name: Build this project
+      - name: Step Name Build this project
         run: ./build.sh
 
-      - name: Deploy to gh-pages
+      - name: Step Name Push to gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
