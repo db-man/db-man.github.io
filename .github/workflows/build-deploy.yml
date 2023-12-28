@@ -2,7 +2,7 @@
 # or when "Workflow Name Upgrade Packages" workflow succeeded,
 # build the create-react-app project and deploy the static files to `gh-pages` branch
 
-name: Workflow Name Build And Deploy
+name: Workflow Name Build CRA And Push Static Files To gh-pages Branch
 
 on:
   workflow_dispatch:
