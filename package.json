@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://db-man.github.io",
   "dependencies": {
-    "@db-man/components": "github:db-man/components",
+    "@db-man/components": "latest",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^14.1.1",
