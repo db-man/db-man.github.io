@@ -2,6 +2,7 @@
 
 npm i
 
+echo "after npm install, show git diff"
 git diff
 
 git config --global user.name 'Upgrade Bot'
