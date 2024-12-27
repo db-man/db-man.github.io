@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -ex
 
 echo "[db-man] Install NPM packages"
 npm i
