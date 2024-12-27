@@ -6,6 +6,12 @@
 npm i
 ```
 
+## How to develop
+
+```bash
+npm start
+```
+
 ## How to test locally
 
 ```bash
