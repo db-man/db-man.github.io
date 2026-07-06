@@ -10,9 +10,9 @@ name: Workflow Name Upgrade Packages
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * 1' # 00:00 every Monday
+    - cron: "0 0 * * 1" # 00:00 every Monday
 
-# Defining access for the GITHUB_TOKEN scopes (GITHUB_TOKEN used actions/checkout@v3 could git push)
+# Defining access for the GITHUB_TOKEN scopes (GITHUB_TOKEN used actions/checkout@v7 could git push)
 permissions:
   contents: write
 
@@ -20,7 +20,7 @@ jobs:
   job_id_upgrade_packages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
       - name: Step Name Upgrade Packages
         run: |
           ./upgrade.sh
